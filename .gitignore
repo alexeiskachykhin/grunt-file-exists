@@ -1,0 +1,6 @@
+node_modules
+
+*.sln
+*.suo
+*.njsproj
+README.html
