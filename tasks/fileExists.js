@@ -3,12 +3,11 @@ module.exports = function (grunt) {
 
 
     grunt.registerMultiTask('fileExists', 'Ensures that specified files exist.', function () {
-        grunt.log.writeln('Checking files for existence...');
-
-
         var files = grunt.file.expand({
             nonull: true
         }, this.data);
+
+        grunt.log.writeln('Checking ' + files.length + ' files for existence...');
 
         var filesExist = files.every(function (file) {
             grunt.verbose.write('Checking file: ');
