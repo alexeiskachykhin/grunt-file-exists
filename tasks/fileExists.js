@@ -7,7 +7,7 @@ module.exports = function (grunt) {
             nonull: true
         }, this.data);
 
-        grunt.log.writeln('Checking ' + files.length + ' files for existence...');
+        grunt.log.writeln('Checking ' + files.length + ' file' + (files.length > 1 ? 's' : '') + ' for existence...');
 
         var filesExist = files.every(function (file) {
             grunt.verbose.write('Checking file: ');
@@ -16,7 +16,7 @@ module.exports = function (grunt) {
             var fileExists = grunt.file.exists(file);
 
             if (!fileExists) {
-                grunt.log.error('%s doesn`t exists!', file);
+                grunt.log.error('%s doesn’t exists!', file);
             }
 
             return fileExists;
