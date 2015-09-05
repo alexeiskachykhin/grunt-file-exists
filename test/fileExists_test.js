@@ -30,5 +30,14 @@ exports.exists = {
             test.ok(error);
             test.done();
         });
+    },
+    
+    shouldNotFailOnEmptySetOfFiles: function (test) {
+        test.expect(1);
+
+        exec('grunt "fileExists:empty"', function (error, stdout, stderr) {
+            test.ifError(error);
+            test.done();
+        });
     }
 };
