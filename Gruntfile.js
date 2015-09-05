@@ -40,4 +40,3 @@ module.exports = function (grunt) {
     grunt.registerTask('test', ['nodeunit']);
     grunt.registerTask('default', ['jshint', 'jsonlint', 'test']);
 };
-
