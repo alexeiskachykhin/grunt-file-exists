@@ -44,7 +44,7 @@ fileExists: {
 
 ### Release to npm
 
-1. Bump up version in package.json according to [Semver](http://semver.org/) and commit to git
+1. Bump up version to X.X.X in package.json according to [Semver](http://semver.org/) and commit to git
 2. Put git tag ```git tag vX.X.X```
-3. Push commit and tag ```git push origin --tags```
+3. Push commit and tag ```git push origin head --tags```
 4. Publish to npm ```npm publish```
