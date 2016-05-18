@@ -1,13 +1,16 @@
 module.exports = function (grunt) {
     'use strict';
 
+    function pluralizeWord(word, count) {
+        return word + (count !== 1 ? 's' : '');
+    }
 
     grunt.registerMultiTask('fileExists', 'Ensures that specified files exist.', function () {
         var files = grunt.file.expand({
             nonull: true
         }, this.data);
 
-        grunt.log.writeln('Checking ' + files.length + ' file' + (files.length !== 1 ? 's' : '') + ' for existence...');
+        grunt.log.writeln('Checking %s %s for existence...', files.length, pluralizeWord('file', files.length));
 
         var filesExist = files.every(function (file) {
             grunt.verbose.write('Checking file: ');

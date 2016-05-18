@@ -27,7 +27,8 @@ module.exports = function (grunt) {
             all: ['test/fixtures/*.txt'],
             none: ['test/fixtures/missing.txt'],
             some: ['<%= fileExists.all %>', '<%= fileExists.none %>'],
-            empty: []
+            empty: [],
+            single: ['test/fixtures/a.txt']
         }
     });
 
