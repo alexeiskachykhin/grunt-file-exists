@@ -1,7 +1,7 @@
 {
   "name": "grunt-file-exists",
   "description": "Check files for existence.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": {
     "name": "Alexei Skachykhin",
     "email": "alexei.skachykhin@live.com"
