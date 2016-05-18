@@ -1,6 +1,6 @@
-module.exports = function (grunt) {
-    'use strict';
+'use strict';
 
+module.exports = function (grunt) {
     function pluralizeWord(word, count) {
         return word + (count !== 1 ? 's' : '');
     }

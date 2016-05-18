@@ -4,7 +4,7 @@ var grunt = require('grunt');
 var exec = require('child_process').exec;
 
 
-exports.exists = {
+module.exports = {
     shouldFindAllFiles: function (test) {
         test.expect(1);
 
