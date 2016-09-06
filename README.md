@@ -30,11 +30,11 @@ _Run this task with the `grunt fileExists` command._
 ```js
 fileExists: {
   scripts: ['a.js', 'b.js']
-},
+}
 ```
 
 ```js
 fileExists: {
 	scripts: grunt.file.readJSON('scripts.json')
-},
+}
 ```
